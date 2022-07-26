@@ -1,8 +1,6 @@
 import threading
 import time
-
 cake='''
-
                                                                                                    
                                                  🕉                               
                                             ,    (%    .                       
@@ -19,7 +17,7 @@ cake='''
                                 \&@@@@@&    *🕉🕉/    @@@@@@@@@@@@@/          
                                   \@@@@@@@@@@@#&@@@&@@@@@@@@@@@@@/                 
                                     \@@@@@@@@@@&   *@@@@@@@@@@@/                          
-                                       🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉                         
+                                       🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉🕉                        
                                               /@@.&&\                     
                                              /@@@@@@@@\                    
                                            %@@@@    &@@@,                     
@@ -49,11 +47,21 @@ cake='''
                                                  .
                                                  .
 '''
+wish='''
+                                🔱 हर हर महादेव 🔱
+                                     🙏🙏🙏
+                           
+ 
+ '''
 def task1():
-    for letter in cake:
-        time.sleep(0.01)
-        print(letter,end=")
-ti = threading.Thread(target=task1,name='t1')
+	for letter in cake:
+		time.sleep(0.01)
+		print(letter, end='')
+	for letter in wish:
+		time.sleep(0.01)
+		print(letter, end='')
 
+t1 = threading.Thread(target=task1, name='t1')
+
+# starting threads
 t1.start()
-
