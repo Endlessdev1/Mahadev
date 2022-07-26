@@ -1,7 +1,7 @@
 # Mahadev
 
 
-#Termux 
+# Termux 
 ```
 pkg install pythone
 ```
@@ -9,6 +9,6 @@ pkg install pythone
 pkg instal git
 ```
 ```
-git clone 
+git clone https://github.com/Endlessdev1/Mahadev
 ```
 
